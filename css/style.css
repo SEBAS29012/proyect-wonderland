@@ -14,13 +14,15 @@
 }
 
 .seccion-galeria .galeria{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
-    width: 95%;
+    width: 100%;
     margin: auto;
-    grid-gap: 10px;
     padding: 40px 0;
     overflow: hidden;
+}
+
+.seccion-galeria .galeria .col-lg-4{
+    margin: 0 !important;
+    padding: 25px;
 }
 
 .seccion-galeria .galeria a{
@@ -28,7 +30,6 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-
 }
 
 .seccion-galeria img{
@@ -97,10 +98,6 @@
 }
 
 @media screen and (max-width:400px) {
-    .seccion-galeria .galeria{
-        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    }
-
     .seccion-galeria .light-box .close{
         top: 20px;
         right: 20px;
