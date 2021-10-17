@@ -1,5 +1,10 @@
 /* CSS GALERIA */
-.seccion-galeria h1{
+:root{  
+    --color-linea-divisora: #550b51;
+    --color-btnClose-flechas: #851919;
+}
+
+.seccion-galeria h4{
     font-weight: 400;
     text-align: center;
     padding: 20x 0;
@@ -7,7 +12,7 @@
 }
 
 .seccion-galeria .linea{
-    background-color: #550b51;
+    background-color: var(--color-linea-divisora);
     height: 5px;
     width: 100%;
     display: block;
@@ -28,7 +33,7 @@
 .seccion-galeria .galeria a{
     display: block;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; /* hace que la imagen que sobresalga por encima del div no sea visible. */
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
@@ -76,7 +81,7 @@
     position: absolute;
     top: 40px;
     right: 40px;
-    background: #851919;
+    background-color: var(--color-btnClose-flechas);
     color: #fff;
     text-decoration: none;
     width: 40px;
@@ -88,7 +93,7 @@
 
 .seccion-galeria .light-box .next{
     display: block;
-    background: #851919;
+    background-color: var(--color-btnClose-flechas);
     color: #fff;
     height: 30px;
     width: 30px;
