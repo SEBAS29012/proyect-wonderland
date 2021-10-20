@@ -1,0 +1,230 @@
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+    font-family: "AktivGrotesk-Regular", sans-serif;
+    outline: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #100e17;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.blanco {
+    color: #fff;
+}
+
+.cursor_mano{
+    cursor: pointer;;
+}
+/* ---------------------------------- */
+
+/* CAROUSEL */
+
+#carousel {
+    height: 75vh !important;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel_image {
+    height: fit-content !important;
+}
+
+/* FIN CAROUSEL */
+
+/* ---------------------------------- */
+
+/* FECHAS DEL CONCIERTO */
+
+.contenedor_tarjeta {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    top: 149%;
+}
+
+.tarjeta {
+    width: 14%;
+    height: 180px;
+    background-color: #474747;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    align-content: center;
+    padding-top: 15px;
+    border-radius: 3px;
+    transition: 0.4s ease-out;
+}
+
+.tarjeta:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.fechas1 {
+    color: #fed474;
+    font-weight: 600;
+    font-size: 60px !important;
+}
+
+.fechas2 {
+    color: #fdb630;
+    font-weight: 600;
+    font-size: 60px !important;
+}
+
+.fechas3 {
+    color: #fc2f65;
+    font-weight: 600;
+    font-size: 60px !important;
+}
+
+.fechas4 {
+    color: #e91cb1;
+    font-weight: 600;
+    font-size: 60px !important;
+}
+
+.fechas5 {
+    color: #9b1fd7;
+    font-weight: 600;
+    font-size: 60px !important;
+}
+
+.fechas6 {
+    color: #6424fa;
+    font-weight: 600;
+    font-size: 60px !important;
+}
+
+.fechas7 {
+    color: #373efa;
+    font-weight: 600;
+    font-size: 60px !important;
+}
+
+/* FIN SECCIÓN DE FECHAS DEL CONCIERTO */
+
+/* ---------------------------------- */
+
+/* NAVIGATION BAR */
+
+nav {
+    background: rgba(0, 0, 0, 0.6);
+    height: 70px;
+    width: fit-content;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo_nav img:nth-child(1) {
+    height: 50px;
+    border-right-color: #fff;
+    border-right-style: dotted;
+    border-right-width: 1px;
+    padding-right: 15px;
+}
+
+.logo_nav img:nth-child(2) {
+    height: 30px;
+    margin-left: 5px;
+}
+
+nav .nav-items li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.nav_text {
+    color: #fff;
+    justify-content: flex-start;
+    text-decoration: none;
+    display: inline-flex;
+    font-family: "AktivGrotesk-Regular", sans-serif;
+    font-size: .875rem;
+    line-height: 60px;
+    align-items: flex-start;
+}
+
+nav .nav-items li a:hover {
+    font-weight: 900;
+}
+
+.compra {
+    color: #42ba96;
+    font-weight: 600;
+}
+
+.globo {
+    font-size: 55px;
+    color: #fff;
+}
+
+/* END OF NAVIGATION BAR */
+
+/* ---------------------------------- */
+
+/* AUSPICIANTES*/
+
+#auspiciantes{
+    /* background-image: url(/proyect-wonderland/img/3.jpeg); */
+    background-color: #fff;
+    /* background-size: cover; */
+}
+
+.cajas_auspiciantes{
+    height: 300px;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    transition: 0.4s ease-out;
+    
+}
+
+.cajas_auspiciantes:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.auspiciantes_logos{
+    height: 4rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+    margin-top: 15px;
+}
+
+/* FIN AUSPICIANTES */
+
+/* ---------------------------------- */
+
+/* FOOTER */
+
+#footer{
+    background-color: #000;
+    height: 100px;
+}
+
+#footer a{
+    font-size: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* FIN DEL FOOTER  */
+
+/* ---------------------------------- */
+
+/* DROPDOWN LOGIN */
+
+/* SEBASTIAN */
+
+/* END DROPDOWN LOGIN */

@@ -1,0 +1,27 @@
+body {
+    background-image: url(/img/gettyimages-182603377_wide-d34ad1cc5c4a7dfb97939743a0733b1b7b75df64.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+
+.video {
+    position: absolute;
+    width: 50%;
+    top: 40%;
+    left: 5%;
+    border-radius: 15px;
+}
+
+div img:nth-child(1){
+    position: absolute;
+    height: 320px;
+    top: 3%;
+    left: 30%;
+}
+div img:nth-child(2){
+    position: absolute;
+    height: 150px;
+    top: 78%;
+    left: 61%;
+}
