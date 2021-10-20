@@ -1,7 +1,82 @@
-/* CSS GALERIA */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
 :root{  
     --color-linea-divisora: #550b51;
-    --color-btnClose-flechas: #851919;
+    --color-btnClose-flechas: #000;
+    --color-hover-menu: #000;
+}
+
+body{
+    font-family: "AktivGrotesk-Regular", sans-serif;
+}
+
+/* CSS NAVBAR */
+
+/* NAVIGATION BAR */
+
+nav {
+    background: rgba(0, 0, 0, 0.6);
+    height: 70px;
+    width: fit-content;
+}
+
+li.dropdown a:hover{
+    color: var(--color-hover-menu);
+}
+
+.logo_nav img:nth-child(1) {
+    height: 50px;
+    border-right-color: #fff;
+    border-right-style: dotted;
+    border-right-width: 1px;
+    padding-right: 15px;
+}
+
+.logo_nav img:nth-child(2) {
+    height: 30px;
+    margin-left: 5px;
+}
+
+.dropdown{
+    list-style: none;
+}
+
+nav .nav-items li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.nav_text {
+    color: #fff;
+    justify-content: flex-start;
+    text-decoration: none;
+    display: inline-flex;
+    font-family: "AktivGrotesk-Regular", sans-serif;
+    font-size: .875rem;
+    line-height: 60px;
+    align-items: flex-start;
+}
+
+nav .nav-items li a:hover {
+    font-weight: 900;
+    color: var(--color-hover-menu);
+}
+
+.compra {
+    color: #42ba96;
+    font-weight: 600;
+}
+
+.globo {
+    font-size: 55px;
+    color: #fff;
+}
+
+/* END NAVBAR */
+
+/* CSS GALERIA */
+.seccion-galeria{
+    margin-top: 6rem;
 }
 
 .seccion-galeria h4{
@@ -9,6 +84,7 @@
     text-align: center;
     padding: 20x 0;
     font-size: 40px;
+    margin-top: 4rem;
 }
 
 .seccion-galeria .linea{
@@ -79,7 +155,7 @@
 .seccion-galeria .light-box .close{
     display: block;
     position: absolute;
-    top: 40px;
+    top: 80px;
     right: 40px;
     background-color: var(--color-btnClose-flechas);
     color: #fff;
@@ -108,3 +184,22 @@
         right: 20px;
     }
 }
+
+/* End Galeria */
+
+/* Footer */
+#footer{
+    background-color: #000;
+    height: 100px;
+}
+
+#footer a{
+    font-size: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.blanco {
+    color: #fff;
+}
+/* End Footer */
