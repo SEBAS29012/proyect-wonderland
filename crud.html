@@ -34,8 +34,6 @@
   </nav>
 
   <div class="container">
-
-
     <div class="content-form mt-4 d-flex flex-column align-items-center">
       <h1 class="title mb-5">
         Registrate y aparta tu cupo para <span class="fw-bold">WONDERLAND!!!</span>
@@ -43,18 +41,18 @@
 
       <form class="row g-3 form bg-light pb-3 px-2 rounded-3">
         <div class="col-md-6">
-          <label for="name" class="form-label">Nombre Completo</label>
+          <label for="name" class="form-label">Nombres</label>
           <input type="text" class="form-control" id="name">
         </div>
         <div class="col-md-6">
-          <label for="password" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="password">
+          <label for="lastname" class="form-label">Apellidos</label>
+          <input type="text" class="form-control" id="lastname">
         </div>
-        <div class="col-8">
+        <div class="col-6">
           <label for="email" class="form-label">Correo Electronico</label>
           <input type="email" class="form-control" id="email" placeholder="usuario@hotmail.com">
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <label for="phone" class="form-label">Teléfono</label>
           <input type="tel" class="form-control" id="phone">
         </div>
@@ -63,13 +61,19 @@
           <input type="text" class="form-control" id="city">
         </div>
         <div class="col-md-6">
-          <label for="address" class="form-label">Dirección</label>
-          <input type="text" class="form-control" id="address">
+          <label for="age" class="form-label">Edad</label>
+          <input type="number" class="form-control" id="age">
         </div>
         <div class="col-12">
-          <button type="submit" class="btn btn-dark">Registrase</button>
-          <button type="submit" class="btn btn-info d-none">Editar</button>
-          <button type="submit" class="btn btn-danger d-none">Cancelar</button>
+          <button type="submit" class="btn btn-dark" id="register">
+            Registrase
+          </button>
+          <button type="button" class="btn btn-info d-none" id="edit">
+            Editar
+          </button>
+          <button type="button" class="btn btn-danger d-none" id="cancel">
+            Cancelar
+          </button>
         </div>
       </form>
     </div>
@@ -79,23 +83,23 @@
         <table class="table">
           <thead>
             <tr class="text-center">
-              <th>Nombre</th>
-              <th>Contraseña</th>
+              <th>Nombres</th>
+              <th>Apellidos</th>
               <th>Correo Electronico</th>
               <th>Teléfono</th>
               <th>Ciudad</th>
-              <th>Dirección</th>
+              <th>Edad</th>
               <th>Acciones</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="tbody">
             <tr>
-              <td class="p-3">Sebastian Meneses</td>
-              <td class="p-3">*******</td>
+              <td class="p-3">Sebastian</td>
+              <td class="p-3">Meneses</td>
               <td class="p-3">meneses0828gmail.com</td>
               <td class="p-3">3125896857</td>
               <td class="p-3">Socorro</td>
-              <td class="p-3">Crr 14 # 11-36</td>
+              <td class="p-3">24</td>
               <td class="d-flex justify-content-around">
                 <button class="btn btn-warning fw-bold">
                   <i class="d-none fas fa-edit"></i> Editar
@@ -116,7 +120,7 @@
 
   <script src="css/bootstrap-5/js/bootstrap.bundle.min.js"></script>
   <script src="assets/fontawesome-5/js/all.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/crud.js"></script>
 </body>
 
 </html>
