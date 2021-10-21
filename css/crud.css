@@ -10,9 +10,19 @@
 }
 
 .form {
+  width: 100%;
   max-width: 1024px;
 }
 
 .table {
   max-width: 1024px;
+  min-width: 768px;
+}
+
+.spanEdit:hover {
+  cursor: pointer;
+}
+
+.spanDelete:hover {
+  cursor: pointer;
 }

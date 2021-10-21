@@ -8,6 +8,7 @@
   <title>Wonderlan CRUD</title>
   <link rel="stylesheet" href="css/bootstrap-5/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/fontawesome-5/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/crud.css">
 </head>
 
@@ -49,7 +50,7 @@
           <label for="lastname" class="form-label">Apellidos</label>
           <input type="text" class="form-control" id="lastname">
         </div>
-        <div class="col-6">
+        <div class="col-md-6">
           <label for="email" class="form-label">Correo Electronico</label>
           <input type="email" class="form-control" id="email" placeholder="usuario@hotmail.com">
         </div>
@@ -95,19 +96,25 @@
           </thead>
           <tbody class="tbody">
             <!-- <tr>
-              <td class="p-3">Sebastian</td>
-              <td class="p-3">Meneses</td>
-              <td class="p-3">meneses0828gmail.com</td>
-              <td class="p-3">3125896857</td>
-              <td class="p-3">Socorro</td>
-              <td class="p-3">24</td>
+              <td class="p-lg-3">Sebastian</td>
+              <td class="p-lg-3">Meneses</td>
+              <td class="p-lg-3">meneses0828gmail.com</td>
+              <td class="p-lg-3">3125896857</td>
+              <td class="p-lg-3">Socorro</td>
+              <td class="p-lg-3">24</td>
               <td class="d-flex justify-content-around">
-                <button class="btn btn-warning fw-bold">
-                  <i class="d-none fas fa-edit"></i> Editar
+                <button class="d-none d-lg-block btn btn-warning fw-bold">
+                  <i class="fas fa-edit"></i> Editar
                 </button>
-                <button class="btn btn-danger text-dark fw-bold">
-                  <i class="d-none fas fa-trash-alt text-dark"></i> Eliminar
+                <button class="d-none d-lg-block btn btn-danger text-dark fw-bold">
+                  <i class="fas fa-trash-alt text-dark"></i> Eliminar
                 </button>
+                <span class="d-block d-lg-none">
+                  <i class="fas fa-edit"></i>
+                </span>
+                <span class="d-block d-lg-none">
+                  <i class="fas fa-trash-alt text-dark"></i>
+                </span>
               </td>
             </tr> -->
           </tbody>

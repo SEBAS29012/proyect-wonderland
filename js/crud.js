@@ -75,40 +75,50 @@ function EditarData(id) {
     if (e.id === userEdit.id) {
       $tbody.innerHTML += `
         <tr>
-          <td class="p-3">${e.name}</td>
-          <td class="p-3">${e.lastname}</td>
-          <td class="p-3">${e.email}</td>
-          <td class="p-3">${e.phone}</td>
-          <td class="p-3">${e.city}</td>
-          <td class="p-3">${e.age}</td>
+          <td class="p-lg-3">${e.name}</td>
+          <td class="p-lg-3">${e.lastname}</td>
+          <td class="p-lg-3">${e.email}</td>
+          <td class="p-lg-3">${e.phone}</td>
+          <td class="p-lg-3">${e.city}</td>
+          <td class="p-lg-3">${e.age}</td>
           <td class="d-flex justify-content-around">
-            <button class="btn btn-warning fw-bold" 
-            onclick="EditarData(${e.id})">
+            <button class="d-none d-lg-block btn btn-warning fw-bold" onclick="EditarData(${e.id})">
               <i class="d-none fas fa-edit"></i> Editar
             </button>
-            <button class="btn btn-danger text-dark fw-bold" onclick="BorrarData(${e.id})">
+            <button class="d-none d-lg-block btn btn-danger text-dark fw-bold" onclick="BorrarData(${e.id})">
               <i class="d-none fas fa-trash-alt text-dark"></i> Eliminar
             </button>
+            <span class="d-block d-lg-none spanEdit" onclick="EditarData(${e.id})">
+              <i class="fas fa-edit"></i>
+            </span>
+            <span class="d-block d-lg-none spanDelete" onclick="BorrarData(${e.id})">
+              <i class="fas fa-trash-alt text-dark"></i>
+            </span>
           </td>
         </tr>
       `;
     } else {
       $tbody.innerHTML += `
         <tr>
-          <td class="p-3">${e.name}</td>
-          <td class="p-3">${e.lastname}</td>
-          <td class="p-3">${e.email}</td>
-          <td class="p-3">${e.phone}</td>
-          <td class="p-3">${e.city}</td>
-          <td class="p-3">${e.age}</td>
+          <td class="p-lg-3">${e.name}</td>
+          <td class="p-lg-3">${e.lastname}</td>
+          <td class="p-lg-3">${e.email}</td>
+          <td class="p-lg-3">${e.phone}</td>
+          <td class="p-lg-3">${e.city}</td>
+          <td class="p-lg-3">${e.age}</td>
           <td class="d-flex justify-content-around">
-            <button class="btn btn-warning fw-bold" 
-            onclick="EditarData(${e.id})" disabled>
+            <button class="d-none d-lg-block btn btn-warning fw-bold" onclick="EditarData(${e.id})" disabled>
               <i class="d-none fas fa-edit"></i> Editar
             </button>
-            <button class="btn btn-danger text-dark fw-bold" onclick="BorrarData(${e.id})" disabled>
+            <button class="d-none d-lg-block btn btn-danger text-dark fw-bold" onclick="BorrarData(${e.id})" disabled>
               <i class="d-none fas fa-trash-alt text-dark"></i> Eliminar
             </button>
+            <span class="d-block d-lg-none spanEdit" onclick="EditarData(${e.id})" disabled>
+              <i class="fas fa-edit"></i>
+            </span>
+            <span class="d-block d-lg-none spanDelete" onclick="BorrarData(${e.id})" disabled>
+              <i class="fas fa-trash-alt text-dark"></i>
+            </span>
           </td>
         </tr>
       `;
@@ -162,19 +172,25 @@ function MostrarData() {
   data.forEach((e) => {
     $tbody.innerHTML += `
       <tr>
-        <td class="p-3">${e.name}</td>
-        <td class="p-3">${e.lastname}</td>
-        <td class="p-3">${e.email}</td>
-        <td class="p-3">${e.phone}</td>
-        <td class="p-3">${e.city}</td>
-        <td class="p-3">${e.age}</td>
-        <td class="text-center">
-          <button class="btn btn-warning fw-bold" onclick="EditarData(${e.id})">
+        <td class="p-lg-3">${e.name}</td>
+        <td class="p-lg-3">${e.lastname}</td>
+        <td class="p-lg-3">${e.email}</td>
+        <td class="p-lg-3">${e.phone}</td>
+        <td class="p-lg-3">${e.city}</td>
+        <td class="p-lg-3">${e.age}</td>
+        <td class="d-flex justify-content-around">
+          <button class="d-none d-lg-block btn btn-warning fw-bold" onclick="EditarData(${e.id})">
             <i class="d-none fas fa-edit"></i> Editar
           </button>
-          <button class="btn btn-danger text-dark fw-bold" onclick="BorrarData(${e.id})">
+          <button class="d-none d-lg-block btn btn-danger text-dark fw-bold" onclick="BorrarData(${e.id})">
             <i class="d-none fas fa-trash-alt text-dark"></i> Eliminar
           </button>
+          <span class="d-block d-lg-none spanEdit" onclick="EditarData(${e.id})">
+            <i class="fas fa-edit"></i>
+          </span>
+          <span class="d-block d-lg-none spanDelete" onclick="BorrarData(${e.id})">
+            <i class="fas fa-trash-alt text-dark"></i>
+          </span>
         </td>
       </tr>
     `;
