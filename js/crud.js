@@ -32,6 +32,13 @@ $form.addEventListener("submit", (e) => {
   e.preventDefault();
   CrearData();
   $form.reset();
+  swal({
+    title: "Excelente!",
+    text: "Te has registrado de manera satisfactoria!",
+    type: "error",
+    confirmButtonText: "Cool",
+  });
+  swal("Excelente!", "Te has registrado de manera satisfactoria!", "success");
 });
 
 // Función crear data
@@ -161,6 +168,20 @@ function ActualizarData() {
 }
 
 function BorrarData(id) {
+  // swal(
+  //   {
+  //     title: "Are you sure?",
+  //     text: "You will not be able to recover this imaginary file!",
+  //     type: "warning",
+  //     showCancelButton: true,
+  //     confirmButtonColor: "#DD6B55",
+  //     confirmButtonText: "Yes, delete it!",
+  //     closeOnConfirm: false,
+  //   },
+  //   function () {
+  //     swal("Deleted!", "Your imaginary file has been deleted.", "success");
+  //   }
+  // );
   data = data.filter((e) => e.id !== id);
   localStorage.setItem(nameLocalStorage, JSON.stringify(data));
   MostrarData();
