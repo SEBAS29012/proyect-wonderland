@@ -32,13 +32,7 @@ $form.addEventListener("submit", (e) => {
   e.preventDefault();
   CrearData();
   $form.reset();
-  swal({
-    title: "Excelente!",
-    text: "Te has registrado de manera satisfactoria!",
-    type: "error",
-    confirmButtonText: "Cool",
-  });
-  swal("Excelente!", "Te has registrado de manera satisfactoria!", "success");
+  Swal.fire("Excelente!", "Te has registrado satisfactoriamente!", "success");
 });
 
 // Función crear data
@@ -165,26 +159,26 @@ function ActualizarData() {
 
   $form.reset();
   MostrarData();
+  Swal.fire("Buen trabajo!", "Actualización exitosa!", "success");
 }
 
 function BorrarData(id) {
-  // swal(
-  //   {
-  //     title: "Are you sure?",
-  //     text: "You will not be able to recover this imaginary file!",
-  //     type: "warning",
-  //     showCancelButton: true,
-  //     confirmButtonColor: "#DD6B55",
-  //     confirmButtonText: "Yes, delete it!",
-  //     closeOnConfirm: false,
-  //   },
-  //   function () {
-  //     swal("Deleted!", "Your imaginary file has been deleted.", "success");
-  //   }
-  // );
-  data = data.filter((e) => e.id !== id);
-  localStorage.setItem(nameLocalStorage, JSON.stringify(data));
-  MostrarData();
+  Swal.fire({
+    title: "¿Estás seguro?",
+    text: "No se podrá revertir después!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "¡Sí, bórralo!",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      data = data.filter((e) => e.id !== id);
+      localStorage.setItem(nameLocalStorage, JSON.stringify(data));
+      MostrarData();
+      Swal.fire("¡Eliminado!", "El usuario ha sido eliminado", "success");
+    }
+  });
 }
 
 function MostrarData() {
@@ -201,10 +195,10 @@ function MostrarData() {
         <td class="p-lg-3">${e.age}</td>
         <td class="d-flex justify-content-around">
           <button class="d-none d-lg-block btn btn-warning fw-bold" onclick="EditarData(${e.id})">
-            <i class="d-none fas fa-edit"></i> Editar
+            <i class="fas fa-edit"></i> Editar
           </button>
           <button class="d-none d-lg-block btn btn-danger text-dark fw-bold" onclick="BorrarData(${e.id})">
-            <i class="d-none fas fa-trash-alt text-dark"></i> Eliminar
+            <i class="fas fa-trash-alt text-dark"></i> Eliminar
           </button>
           <span class="d-block d-lg-none spanEdit" onclick="EditarData(${e.id})">
             <i class="fas fa-edit"></i>
