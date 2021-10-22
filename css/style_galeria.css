@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+:root{  
+    --color-linea-divisora: #550b51;
+    --color-btnClose-flechas: #000;
+    --color-hover-menu: #000;
+}
+
+body{
+    font-family: "AktivGrotesk-Regular", sans-serif;
+}
+
+/* CSS NAVBAR */
+
+/* NAVIGATION BAR */
+
+nav {
+    background: rgba(0, 0, 0, 0.6);
+    height: 70px;
+    width: fit-content;
+}
+
+li.dropdown a:hover{
+    color: var(--color-hover-menu);
+}
+
+.logo_nav img:nth-child(1) {
+    height: 50px;
+    border-right-color: #fff;
+    border-right-style: dotted;
+    border-right-width: 1px;
+    padding-right: 15px;
+}
+
+.logo_nav img:nth-child(2) {
+    height: 30px;
+    margin-left: 5px;
+}
+
+.dropdown{
+    list-style: none;
+}
+
+nav .nav-items li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.nav_text {
+    color: #fff;
+    justify-content: flex-start;
+    text-decoration: none;
+    display: inline-flex;
+    font-family: "AktivGrotesk-Regular", sans-serif;
+    font-size: .875rem;
+    line-height: 60px;
+    align-items: flex-start;
+}
+
+nav .nav-items li a:hover {
+    font-weight: 900;
+    color: var(--color-hover-menu);
+}
+
+.compra {
+    color: #42ba96;
+    font-weight: 600;
+}
+
+.globo {
+    font-size: 55px;
+    color: #fff;
+}
+
+/* END NAVBAR */
+
+/* CSS GALERIA */
+.seccion-galeria{
+    margin-top: 6rem;
+}
+
+.seccion-galeria h4{
+    font-weight: 400;
+    text-align: center;
+    padding: 20x 0;
+    font-size: 40px;
+    margin-top: 4rem;
+}
+
+.seccion-galeria .linea{
+    background-color: var(--color-linea-divisora);
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+
+.seccion-galeria .galeria{
+    width: 100%;
+    margin: auto;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.seccion-galeria .galeria .col-lg-3{
+    margin: 0 !important;
+    padding: 25px;
+}
+
+.seccion-galeria .galeria a{
+    display: block;
+    position: relative;
+    overflow: hidden; /* hace que la imagen que sobresalga por encima del div no sea visible. */
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.seccion-galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover; /* Propiedad para que no pierda la definicion la imagen, una vez se le estableza el ancho y alto*/
+    transition: transform 0.5s; /* Propiedad para que la imagen tenga efecto de movimiento de 0.5s */
+}
+
+.seccion-galeria .galeria a:hover img{
+    filter: blur(2px); /* Propiedad que al pasar el cursor por una imagen, esta se ponga un poco distorcionada */
+    transform: rotate(10deg) scale(1.3); /* Propiedad que al pasar el cursor por una imagen, esta se gira 10 grados */
+}
+
+.seccion-galeria .light-box{
+    position: fixed;
+    top:0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out; /* Efecto para que cuando le den clic a una imagen */
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0) /* Se va a ocultar (desaparece la imagen flotante)  con 0 se oculta con 1 se muestra */
+}
+
+.seccion-galeria .light-box img{
+    width: 75vw;
+    height: 500px;
+    max-height: 70vh;
+}
+
+/* Si alguien ha dado clic en la imagen*/
+.seccion-galeria .light-box:target{
+    transform: scale(1); /* Se va a mostrar (Aparece la imagen flotante)  con 0 se oculta con 1 se muestra */
+}
+
+.seccion-galeria .light-box .close{
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    background-color: var(--color-btnClose-flechas);
+    color: #fff;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.seccion-galeria .light-box .next{
+    display: block;
+    background-color: var(--color-btnClose-flechas);
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (max-width:400px) {
+    .seccion-galeria .light-box .close{
+        top: 20px;
+        right: 20px;
+    }
+}
+
+/* End Galeria */
+
+/* Footer */
+#footer{
+    background-color: #000;
+    height: 100px;
+}
+
+#footer a{
+    font-size: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.blanco {
+    color: #fff;
+}
+/* End Footer */
