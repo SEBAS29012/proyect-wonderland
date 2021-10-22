@@ -3,7 +3,7 @@
 :root{  
     --color-linea-divisora: #550b51;
     --color-btnClose-flechas: #000;
-    --color-hover-menu: #000;
+    --color-hover-menu-footer: rgb(189, 179, 179);
 }
 
 body{
@@ -11,17 +11,27 @@ body{
 }
 
 /* CSS NAVBAR */
-
-/* NAVIGATION BAR */
-
 nav {
     background: rgba(0, 0, 0, 0.6);
-    height: 70px;
-    width: fit-content;
 }
 
-li.dropdown a:hover{
-    color: var(--color-hover-menu);
+.navbar-collapse{
+    justify-content: space-between;
+}
+
+.navbar-nav li{
+    padding-left: 2rem;
+}
+
+@media (min-width:1200px) and (max-width:1347px) {
+    .navbar-nav li{
+        padding-left: 0.6rem;
+    }
+}
+
+.navbar-nav li a:hover{
+    font-weight: 900;
+    color: var(--color-hover-menu-footer);
 }
 
 .logo_nav img:nth-child(1) {
@@ -37,15 +47,6 @@ li.dropdown a:hover{
     margin-left: 5px;
 }
 
-.dropdown{
-    list-style: none;
-}
-
-nav .nav-items li {
-    list-style: none;
-    padding: 0 10px;
-}
-
 .nav_text {
     color: #fff;
     justify-content: flex-start;
@@ -53,13 +54,8 @@ nav .nav-items li {
     display: inline-flex;
     font-family: "AktivGrotesk-Regular", sans-serif;
     font-size: .875rem;
-    line-height: 60px;
+    line-height: 55px;
     align-items: flex-start;
-}
-
-nav .nav-items li a:hover {
-    font-weight: 900;
-    color: var(--color-hover-menu);
 }
 
 .compra {
@@ -188,18 +184,18 @@ nav .nav-items li a:hover {
 /* End Galeria */
 
 /* Footer */
-#footer{
+footer{
     background-color: #000;
-    height: 100px;
 }
 
-#footer a{
-    font-size: 8px;
+footer a{
+    font-size: 0.65rem;
     color: #fff;
     text-decoration: none;
 }
 
-.blanco {
-    color: #fff;
+footer a:hover{
+    color: var(--color-hover-menu-footer);
 }
+
 /* End Footer */
