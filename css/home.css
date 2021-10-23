@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+
+:root {
+  --color-hover-menu-footer: rgb(189, 179, 179);
+}
+
+* {
+  font-family: "AktivGrotesk-Regular", sans-serif;
+  outline: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: #100e17; */
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.blanco {
+  color: #fff;
+}
+
+.cursor_mano {
+  cursor: pointer;
+}
+/* ---------------------------------- */
+
+/* CAROUSEL */
+.content-carrousel {
+  margin-top: 76px;
+}
+
+.btn-subs {
+  border: none;
+  background-color: #b30765;
+  width: 230px;
+  padding: 10px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -115px;
+}
+
+@media (min-width: 1024px) {
+  .btn-subs {
+    font-size: 32px;
+    border: none;
+    background-color: #b30765;
+    width: 300px;
+    padding: 20px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+  }
+}
+
+.carousel_image {
+  height: fit-content !important;
+}
+/* FIN CAROUSEL */
+
+/* ---------------------------------- */
+
+/* FECHAS DEL CONCIERTO */
+
+.contenedor_tarjeta {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  top: 149%;
+}
+
+.tarjeta {
+  width: 14%;
+  height: 180px;
+  background-color: #474747;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  align-content: center;
+  padding-top: 15px;
+  border-radius: 3px;
+  transition: 0.4s ease-out;
+}
+
+.tarjeta:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.fechas1 {
+  color: #fed474;
+  font-weight: 600;
+  font-size: 60px !important;
+}
+
+.fechas2 {
+  color: #fdb630;
+  font-weight: 600;
+  font-size: 60px !important;
+}
+
+.fechas3 {
+  color: #fc2f65;
+  font-weight: 600;
+  font-size: 60px !important;
+}
+
+.fechas4 {
+  color: #e91cb1;
+  font-weight: 600;
+  font-size: 60px !important;
+}
+
+.fechas5 {
+  color: #9b1fd7;
+  font-weight: 600;
+  font-size: 60px !important;
+}
+
+.fechas6 {
+  color: #6424fa;
+  font-weight: 600;
+  font-size: 60px !important;
+}
+
+.fechas7 {
+  color: #373efa;
+  font-weight: 600;
+  font-size: 60px !important;
+}
+
+/* FIN SECCIÓN DE FECHAS DEL CONCIERTO */
+
+/* ---------------------------------- */
+
+/* NAVIGATION BAR */
+nav {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-collapse {
+  justify-content: space-between;
+}
+
+.btn-nav {
+  border-color: #8c8c8d !important;
+}
+
+.navbar-nav li {
+  padding-left: 2rem;
+}
+
+@media (min-width: 1200px) and (max-width: 1347px) {
+  .navbar-nav li {
+    padding-left: 0.6rem;
+  }
+}
+
+.navbar-nav li a:hover {
+  font-weight: 900;
+  color: var(--color-hover-menu-footer);
+}
+
+.logo_nav img:nth-child(1) {
+  height: 50px;
+  border-right-color: #fff;
+  border-right-style: dotted;
+  border-right-width: 1px;
+  padding-right: 15px;
+}
+
+.logo_nav img:nth-child(2) {
+  height: 30px;
+  margin-left: 5px;
+}
+
+.nav_text {
+  color: #fff;
+  justify-content: flex-start;
+  text-decoration: none;
+  display: inline-flex;
+  font-family: "AktivGrotesk-Regular", sans-serif;
+  font-size: 0.875rem;
+  line-height: 55px;
+  align-items: flex-start;
+}
+
+.compra {
+  color: #42ba96;
+  font-weight: 600;
+}
+
+.globo {
+  font-size: 55px;
+  color: #fff;
+}
+
+/* END OF NAVIGATION BAR */
+
+/* ---------------------------------- */
+
+/* AUSPICIANTES*/
+
+#auspiciantes {
+  background-color: #fff;
+}
+
+.cajas_auspiciantes {
+  background-color: #ebebeb;
+  border-radius: 10px;
+  transition: 0.4s ease-out;
+}
+
+.cajas_auspiciantes:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.auspiciantes_logos {
+  height: 4rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  margin-top: 15px;
+}
+
+/* FIN AUSPICIANTES */
+
+/* ---------------------------------- */
+
+/* FOOTER */
+footer {
+  background-color: #000;
+}
+
+footer a {
+  font-size: 0.65rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--color-hover-menu-footer);
+}
+/* FIN DEL FOOTER  */
+
+/* ---------------------------------- */
+
+/* DROPDOWN LOGIN */
+
+/* SEBASTIAN */
+
+/* END DROPDOWN LOGIN */
