@@ -15,6 +15,10 @@ body {
   text-decoration: underline;
 }
 
+.content-form {
+  margin-top: 86px;
+}
+
 .form {
   width: 100%;
   max-width: 1024px;

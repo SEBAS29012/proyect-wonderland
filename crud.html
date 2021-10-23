@@ -7,65 +7,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wonderlan CRUD</title>
   <link rel="stylesheet" href="css/bootstrap-5/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" type="text/css" href="assets/sweetalert-master/docs-src/assets/sweetalert"> -->
-
   <link rel="stylesheet" href="assets/fontawesome-5/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/crud.css">
 </head>
 
 <body>
 
-  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Wonderland</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-expand-xl navbar-light ps-3 fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand logo_nav" href="#">
+        <img src="img/logo2.png" alt="">
+        <img src="img/Letras_blancas-removebg-preview.png" alt="">
+      </a>
+      <button class="btn-nav navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Tickets</a>
+            <a href="index.html" class="nav_text">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a href="#" class="nav_text">Gira internacional</a>
+          </li>
+          <li class="nav-item">
+            <a href="galeria.html" class="nav_text">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://all.accor.com/es/city/hoteles-bogota-v5893.shtml" target="_blank" class="nav_text">Hoteles
+              asociados</a>
+          </li>
+          <li class="nav-item">
+            <a href="/bogotá.html" class="nav_text">Bogotá</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav_text">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav_text">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav_text compra">Compra tu entrada</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav_text"><b>Crea tu cuenta / Inicia sesión</b><i
+                class="fas fa-globe-americas globo ps-3"></i></a>
           </li>
         </ul>
       </div>
     </div>
-  </nav> -->
-
-  <section>
-    <nav class="col-12 d-flex flex-wrap align-items-center ps-3 fixed-top">
-      <div class="col-2 logo_nav column justify-content-end">
-        <img src="img_galeria/favicon_logo.png" alt="">
-        <img src="img_galeria/Letras_blancas-removebg-preview.png" alt="">
-      </div>
-      <div class="col-7 nav-items d-flex ali column">
-        <li><a href="index.html" class="nav_text">Home</a></li>
-        <li><a href="#" class="nav_text">Gira internacional</a></li>
-        <li><a href="galeria.html" class="nav_text">Galería</a></li>
-        <li><a href="https://all.accor.com/es/city/hoteles-bogota-v5893.shtml" target="_blank" class="nav_text">Hoteles
-            asociados</a>
-        </li>
-        <li><a href="/bogotá.html" class="nav_text">Bogotá</a></li>
-        <li><a href="#" class="nav_text">Productos</a></li>
-        <li><a href="#" class="nav_text">Noticias</a></li>
-        <li><a href="#" class="nav_text compra"> Compra tu entrada</a></li>
-      </div>
-      <div class="col-3 d-flex column justify-content-end fs-6 pe-3">
-        <li class="dropdown">
-          <a href="#" class="nav_text" data-toggle="dropdown"><b>Crea tu cuenta / Inicia sesión</b>
-            <span class="caret"></span></a>
-        </li>
-        <i class="fas fa-globe-americas globo ps-3"></i>
-      </div>
-    </nav>
-  </section>
+  </nav>
 
   <div class="container">
-    <div class="content-form mt-4 d-flex flex-column align-items-center">
+    <div class="content-form d-flex flex-column align-items-center">
       <h1 class="title mb-5">
         Registrate y aparta tu cupo para <span class="fw-bold">WONDERLAND!!!</span>
       </h1>
@@ -124,41 +122,47 @@
               <th>Acciones</th>
             </tr>
           </thead>
-          <tbody class="tbody">
-            <!-- <tr>
-              <td class="p-lg-3">Sebastian</td>
-              <td class="p-lg-3">Meneses</td>
-              <td class="p-lg-3">meneses0828gmail.com</td>
-              <td class="p-lg-3">3125896857</td>
-              <td class="p-lg-3">Socorro</td>
-              <td class="p-lg-3">24</td>
-              <td class="d-flex justify-content-around">
-                <button class="d-none d-lg-block btn btn-warning fw-bold">
-                  <i class="fas fa-edit"></i> Editar
-                </button>
-                <button class="d-none d-lg-block btn btn-danger text-dark fw-bold">
-                  <i class="fas fa-trash-alt text-dark"></i> Eliminar
-                </button>
-                <span class="d-block d-lg-none">
-                  <i class="fas fa-edit"></i>
-                </span>
-                <span class="d-block d-lg-none">
-                  <i class="fas fa-trash-alt text-dark"></i>
-                </span>
-              </td>
-            </tr> -->
-          </tbody>
+          <tbody class="tbody"></tbody>
         </table>
-
       </div>
     </div>
-
   </div>
+
+  <footer class="fixed-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 my-3 pt-3">
+          <a href="https://open.spotify.com/playlist/3Di88mvYplBtkDBIzGLiiM" target="_blank">
+            <h4 class="text-center"><i class="fab fa-spotify"></i> <span>Alistate dede ya escuchando nuestra
+                playlist</span></h4>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-12">
+          <a href="#">
+            <p class="text-center">SI PRESIONAS ESTE LINK, AUTOMATICAMENTE ACEPTAS LOS TERMINOS Y CONDICIONES DE USO
+            </p>
+          </a>
+        </div>
+        <div class="col-lg-6 col-md-5 col-sm-12">
+          <a href="#">
+            <p class="text-center">TODOS LOS DERECHOS RESERVADOS ©2021 GRUPO 1 BOGOTA INSITUTE OF TECHNOLOGY WEB
+              DEVELOPMENT FULLSTACK</p>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <a href="#">
+            <p class="text-center">SOSPECHAS DE ALGO ILEGAL, PRESIONA AQUÍ</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
   <script src="css/bootstrap-5/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <!-- <script src="assets/sweetalert-master/docs/assets/sweetalert/sweetalert.min.js"></script> -->
   <script src="assets/fontawesome-5/js/all.min.js"></script>
   <script src="js/crud.js"></script>
   <script src="js/main.js"></script>
